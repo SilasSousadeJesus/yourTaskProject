@@ -1,0 +1,11 @@
+{
+    "openapi": "3.0.1",
+    "info":{
+        "title":"YourTask",
+        "description": "Documentação da Api YourTask. Nesta documentação encontramos o registro do Crud de usuarios, Projetos e tarefas.",
+        "version": "1.0.0"
+    }
+
+}
+
+
