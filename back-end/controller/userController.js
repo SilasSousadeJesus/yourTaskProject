@@ -1,5 +1,6 @@
 const User = require("../model/userModel");
 const Project = require('../model/projectModel')
+const Task = require('../model/taskModel')
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt")
 
@@ -126,6 +127,7 @@ module.exports = class userController {
         }
         
         try {
+            await Task.find({assignedTo : id}).deleteMany()
             await Project.find({user : id}).deleteMany()
             await User.findByIdAndDelete(id);
             return res.status(200).json({message: 'deleted user'})

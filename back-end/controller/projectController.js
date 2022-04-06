@@ -1,4 +1,5 @@
 const Project = require('../model/projectModel')
+const Task = require('../model/taskModel')
 
 module.exports = class projectController {
 
@@ -97,6 +98,7 @@ module.exports = class projectController {
         }
 
         try {
+            await Task.find({project : req.params.projectId}).deleteMany()
             await Project.findByIdAndDelete(req.params.projectId)
             return res.status(200).json({message: "project removed successfully"});  
         } catch (error) {
