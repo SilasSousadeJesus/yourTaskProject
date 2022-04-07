@@ -24,7 +24,7 @@
     <li>Utilização de formularios</li>
      <li>Validações de campos dos formularios</li>
      <li>Bootstrap</li>
-     <li>Lazzy Load</li>
+     <li>Lazy Loading</li>
   </ul>
 
 </div>
