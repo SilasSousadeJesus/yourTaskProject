@@ -4,7 +4,7 @@
 </div>
 <br>
 <div>
-  <h2>&rArr; PROJETO AINDA EM CONSTRUÇÃO &lArr;</h2>
+  <h2 align="center" >&rArr; PROJETO AINDA EM CONSTRUÇÃO &lArr;</h2>
 </div>
 <br>
 
