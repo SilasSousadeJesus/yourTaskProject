@@ -11,8 +11,9 @@ import { User } from './../models/user';
 export class LoginComponent implements OnInit {
 
   user:User =  {
-    name:'',
-    email:'',
+    id:'',
+    name: '',
+    email: '',
     password:'',
     token:''
   }

@@ -11,6 +11,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { SignupComponent } from './components/auth/signup/signup.component';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './components/auth/login/login.component';
+import { InfoUserComponent } from './components/info-user/info-user.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { LoginComponent } from './components/auth/login/login.component';
     FooterComponent,
     SignupComponent,
     LoginComponent,
+    InfoUserComponent,
 
 
 
