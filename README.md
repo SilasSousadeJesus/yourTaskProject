@@ -21,6 +21,8 @@
     <li>Login e Autenticação de Usuarios</li>
     <li>Criptografia de Senha de Usuario</li>
      <li>Guarda de Rotas</li>
+    <li>Conexão com MongoDB</li>
+    <li>Relacionamento entre collections com MongoDB</li>
     <li>Utilização de formularios</li>
      <li>Validações de campos dos formularios</li>
      <li>Bootstrap</li>
