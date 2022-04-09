@@ -10,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { SignupComponent } from './components/auth/signup/signup.component';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './components/auth/login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     FooterComponent,
     SignupComponent,
+    LoginComponent,
 
 
 
