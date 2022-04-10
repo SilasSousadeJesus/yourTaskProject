@@ -8,7 +8,7 @@ const router = Router();
 
  // MIDDLEWARE PARA VERIFICAR VALIDADE DO TOKEN
 router.use(authMiddleware)
-router.get('/', projectController.listProjects);
+router.get('/:userId', projectController.listProjects);
 router.get('/showproject/:projectId', projectController.showproject);
 router.post('/create', projectController.createProject);
 router.post('/updateProject/:projectId', projectController.updateProject);

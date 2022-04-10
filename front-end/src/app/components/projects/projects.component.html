@@ -1,0 +1,28 @@
+<div class="d-flex justify-content-between" style="margin-top: 60px;">
+  <h2 class="ms-5 mt-3">Lista de Projetos</h2>
+  <div class="d-flex mt-4" style="margin-right: 150px;">
+    <button type="button" class="btn btn-primary" style="border-radius: 80%; " title="Adicionar Projeto">+</button>
+  </div>
+</div>
+
+<div class="row " style="margin-bottom: 70px;">
+
+  <div class="col-3 d-flex justify-content-around " *ngFor="let project of projects">
+
+    <div class="card my-2" style="width: 18rem;" >
+      <div class="card-body" >
+        <h5 class="card-title text-center">{{project.name}}</h5>
+        <p class="card-text">{{project.description}}</p>
+        <div class="text-end" >
+          <a class="card-link">Abrir</a>
+          <a class="card-link">Editar</a>
+          <a class="card-link">Excluir</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
