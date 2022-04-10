@@ -31,4 +31,17 @@ url = "http://localhost:3000";
     this.router.navigate(['/home'])
   }
 
+  getToken(){
+    return sessionStorage.getItem('token')
+  }
+
+  intercept(req:any, next:any){
+    const tokenizeReq = req.clone({
+      setHeaders: {
+        Authorization: `Bearer ${this.getToken()}`
+      }
+    });
+    return next.handle(tokenizeReq);
+  }
+
 }

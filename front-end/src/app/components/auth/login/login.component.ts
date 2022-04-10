@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
   login(){
     return this.authService.sigIni(this.user).subscribe(res=>{
       sessionStorage.setItem('token', res.token)
-      this.router.navigate(['/home'])
+      this.router.navigate(['/projeto'])
     })
   }
 

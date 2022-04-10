@@ -24,8 +24,10 @@ module.exports = class projectController {
 
     static async  listProjects(req, res){
 
-        try {
-            const projects = await Project.find().populate(['user', 'tasks']);
+        try { 
+            const userId = req.params.userId
+
+            const projects =  await Project.find({user : userId}).populate(['user', 'tasks']);
 
             if(!projects || projects == null || projects == ''){
                 return res.status(404).json({message: 'there are no projects'})
