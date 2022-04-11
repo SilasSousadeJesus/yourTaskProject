@@ -15,4 +15,9 @@ export class ProjectService {
     return this.http.get<ProjectModel>(`${this.url}/${userId}`)
   }
 
+  deleteProject(id:string){
+    return this.http.delete(`${this.url}/deleteProject/${id}`);
+  }
+
+
 }
