@@ -24,16 +24,12 @@ export class ProjectsComponent implements OnInit {
   }
 
   listprojects(){
-
     const userCurrent = <any> this.userService.UserIdent()
     const userCurrentId = userCurrent.id
 
     this.projectService.listProject(userCurrentId).subscribe(res=>{
       return this.projects = res;
     }, err=> console.log(err))
-
-
-
   }
 
   deleteProject(id:string){
