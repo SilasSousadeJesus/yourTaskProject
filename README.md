@@ -52,6 +52,8 @@
   <ul >
     <li>Faça um git clone ou baixe manualmente o projeto.</li>
     <p>git clone https://github.com/SilasSousadeJesus/yourTaskProject.git</p>
+    <li>No seu VSCODE abra um terminal para pasta back-end e instala os modulos com o comando npm install</li>
+    <li>No seu VSCODE abra um terminal para pasta front-end e instala os modulos com o comando npm install</li>
     <li>Dentro da pasta BackEnd renomeio o arquivo .env_exemplo para .env</li>
     <li>Dentro do arquivo .env coloque sua chave do mongoDB logo apos MONGODB_URI=, exemplo abaixo:</li>
      <p>MONGODB_URI=mongodb+srv://user:senha@cluster0.fp3bn.mongodb.net/mydatabase</p>
