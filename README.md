@@ -59,7 +59,7 @@
      <p>MONGODB_URI=mongodb+srv://user:senha@cluster0.fp3bn.mongodb.net/mydatabase</p>
      <li>Dentro do arquivo .env coloque uma sequencia de letras que seram sua secret, exemplo abaixo:</li>
      <p>SECRET=SHVCKASFASFASFASASFAAAFSMUENFELNEAUQFVFVN</p>
-     <li>No seu VSCODE abra a pasta back-end no terminal e digite o comando: npm run dev. e deixe o servidor rodando</li>
+     <li>No seu VSCODE abra a pasta back-end no terminal e digite o comando: npm run dev e deixe o servidor rodando</li>
      <li>No seu VSCODE abra a pasta front-end em outro terminal e digite o comando: ng serve -o. e deixe rodando</li>
      <li>Tudo pronto!!</li>
 
