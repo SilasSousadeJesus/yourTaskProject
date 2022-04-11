@@ -37,5 +37,15 @@ export class UserServiceService {
     return this.http.get(`${this.url}/user/showUser/${id}`)
   }
 
+  deleteUser(id:String){
+
+    return this.http.delete(`${this.url}/user/delete/${id}`)
+
+  }
+
+  editeUser(id:string, user:User){
+    return this.http.post(`${this.url}/user/update/${id}`, user)
+  }
+
 
 }
