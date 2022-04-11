@@ -46,3 +46,19 @@
   </div>
 
 </div>
+
+
+  <h3>Para usar este projeto siga os seguintes passos: </h3>
+  <ul >
+    <li>Faça um git clone ou baixe manualmente o projeto</li>
+    <p>git clone https://github.com/SilasSousadeJesus/yourTaskProject.git</p>
+    <li>Dentro da pasta BackEnd renomeio o arquivo .env_exemplo para .env</li>
+    <li>Dentro do arquivo .env coloque sua chave do mongoDB logo apos MONGODB_URI=, exemplo abaixo:</li>
+     <p>MONGODB_URI=mongodb+srv://user:senha@cluster0.fp3bn.mongodb.net/mydatabase</p>
+     <li>Dentro do arquivo .env coloque uma sequencia de letras que seram sua secret, exemplo abaixo:</li>
+     <p>SECRET=SHVCKASFASFASFASASFAAAFSMUENFELNEAUQFVFVN</p>
+     <li>No seu VSCODE abra a pasta back-end no terminal e digite o comando: npm run dev. e deixe o servidor rodando</li>
+     <li>No seu VSCODE abra a pasta front-end em outro terminal e digite o comando: ng serve -o. e deixe rodando</li>
+     <li>Tudo pronto!!</li>
+
+  </ul>
