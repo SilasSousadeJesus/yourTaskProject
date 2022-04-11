@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectModel } from "./model/project-model";
 import { UserServiceService } from "../info-user/userService/user-service.service";
-import { ProjectService } from './projectSerivce/project.service';
+import { ProjectService } from './projectService/project.service';
 
 @Component({
   selector: 'app-projects',
@@ -34,6 +34,12 @@ export class ProjectsComponent implements OnInit {
 
 
 
+  }
+
+  deleteProject(id:string){
+      this.projectService.deleteProject(id).subscribe(res=>{
+        this.listprojects()
+      }, err=>console.log(err))
   }
 
 }

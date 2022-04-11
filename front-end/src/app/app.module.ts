@@ -12,8 +12,9 @@ import { SignupComponent } from './components/auth/signup/signup.component';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './components/auth/login/login.component';
 import { InfoUserComponent } from './components/info-user/info-user.component';
-import { ProjectsComponent } from './components/projects/projects.component';
 import { AuthserviceService } from "./components/auth/authservice/authservice.service";
+
+
 
 @NgModule({
   declarations: [
@@ -24,7 +25,6 @@ import { AuthserviceService } from "./components/auth/authservice/authservice.se
     SignupComponent,
     LoginComponent,
     InfoUserComponent,
-    ProjectsComponent,
   ],
   imports: [
     BrowserModule,

@@ -26,8 +26,11 @@ const routes: Routes = [
         path:'infoUser', component: InfoUserComponent, canActivate: [AuthGuardGuard]
       },
       {
-        path:'projeto', component: ProjectsComponent, canActivate: [AuthGuardGuard]
-      }
+        path:'projeto', component: ProjectsComponent,
+      },
+
+
+      { path: 'projeto', canActivate: [AuthGuardGuard], loadChildren: () => import('./components/projects/modules/project-module.module').then(m => m.ProjectModuleModule) }
 
 
 
