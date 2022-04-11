@@ -19,5 +19,12 @@ export class ProjectService {
     return this.http.delete(`${this.url}/deleteProject/${id}`);
   }
 
+  showProject(id: string){
+    return this.http.get<ProjectModel>(`${this.url}/showproject/${id}`)
+  }
+
+  editProject(id:string, project: ProjectModel){
+    return this.http.post<ProjectModel>(`${this.url}/updateProject/${id}`, project)
+  }
 
 }

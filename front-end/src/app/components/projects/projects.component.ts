@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProjectModel } from "./model/project-model";
 import { UserServiceService } from "../info-user/userService/user-service.service";
 import { ProjectService } from './projectService/project.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -16,8 +17,11 @@ export class ProjectsComponent implements OnInit {
     user: ''
   }]
 
-  constructor(private userService: UserServiceService,
-              private projectService: ProjectService ) { }
+  constructor(
+              private userService: UserServiceService,
+              private projectService: ProjectService,
+              private router: Router
+            ) { }
 
   ngOnInit(): void {
     this.listprojects()
@@ -36,6 +40,10 @@ export class ProjectsComponent implements OnInit {
       this.projectService.deleteProject(id).subscribe(res=>{
         this.listprojects()
       }, err=>console.log(err))
+  }
+
+  routerEdit(id:string){
+    this.router.navigate([`/projeto/edit/${id}`])
   }
 
 }

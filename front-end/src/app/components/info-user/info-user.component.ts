@@ -25,35 +25,31 @@ export class InfoUserComponent implements OnInit {
     this.CurrentUser();
   }
 
+
+  userIdent(){
+    const userCurrent = <any> this.userService.UserIdent()
+    const userCurrentId = userCurrent.id
+    return userCurrentId
+  }
+
   CurrentUser(){
 
-    const userCurrent = <any> this.userService.UserIdent();
-    const userId = userCurrent.id
-
-    this.userService.getuser(userId).subscribe(res=>{
+    this.userService.getuser(this.userIdent()).subscribe(res=>{
       return this.user = res
     }, err=> console.log(err))
 
   }
 
   updateUser(){
-    const userCurrent = <any> this.userService.UserIdent();
-    const userId = userCurrent.id;
-
-    this.userService.editeUser(userId, this.user).subscribe(res=>{
+    this.userService.editeUser(this.userIdent(), this.user).subscribe(res=>{
       this.user = res
       this.CurrentUser();
     },  err=> console.log(err));
-
-
   }
 
   deleteUser(){
 
-    const userCurrent = <any> this.userService.UserIdent();
-    const userId = userCurrent.id
-
-    this.userService.deleteUser(userId).subscribe(res=>{
+    this.userService.deleteUser(this.userIdent()).subscribe(res=>{
 
     }, err => console.log(err))
 
