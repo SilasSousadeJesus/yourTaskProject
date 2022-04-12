@@ -11,6 +11,10 @@ export class ProjectService {
 
   constructor(private http: HttpClient) { }
 
+  createProject(project: ProjectModel){
+    return this.http.post<ProjectModel>(`${this.url}/create`, project)
+  }
+
   listProject(userId:string){
     return this.http.get<ProjectModel>(`${this.url}/${userId}`)
   }
