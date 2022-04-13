@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './components/auth/login/login.component';
 import { InfoUserComponent } from './components/info-user/info-user.component';
 import { AuthserviceService } from "./components/auth/authservice/authservice.service";
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 
 
@@ -25,6 +26,7 @@ import { AuthserviceService } from "./components/auth/authservice/authservice.se
     SignupComponent,
     LoginComponent,
     InfoUserComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
