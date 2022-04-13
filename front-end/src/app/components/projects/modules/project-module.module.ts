@@ -5,12 +5,16 @@ import { ProjectModuleRoutingModule } from './project-module-routing.module';
 import { ProjectsComponent } from '../projects.component';
 import { EditprojectComponent } from '../editproject/editproject.component';
 import { FormsModule } from '@angular/forms';
+import { TasksComponent } from '../../tasks/tasks.component';
+import { EditTaskComponent } from '../../tasks/edit-task/edit-task.component';
 
 
 @NgModule({
   declarations: [
     ProjectsComponent,
-    EditprojectComponent
+    EditprojectComponent,
+    TasksComponent,
+    EditTaskComponent
   ],
   imports: [
     CommonModule,

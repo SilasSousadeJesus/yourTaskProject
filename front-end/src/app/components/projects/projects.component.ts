@@ -13,7 +13,7 @@ export class ProjectsComponent implements OnInit {
   projects:any = [{
     name: '',
     description: '',
-    user: this.userIdent()
+    user: ''
   }]
 
   project:any = {
@@ -62,5 +62,10 @@ export class ProjectsComponent implements OnInit {
   routerEdit(id:string){
     this.router.navigate([`/projeto/edit/${id}`]);
   }
+
+  routerTasks(id:string){
+    this.router.navigate([`/projeto/task/${id}`]);
+  }
+
 
 }
