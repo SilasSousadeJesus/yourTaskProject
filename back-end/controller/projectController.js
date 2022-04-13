@@ -15,11 +15,12 @@ module.exports = class projectController {
                 return res.status(404).json({message: 'empty description field'})
             }
             const project = await Project.create({name, description, user: req.userId});
+          
             return res.status(200).json({message: "project created successfully"})
         } catch (error) {
             return res.status(400).json({error})
         }
-  
+        
     }
 
     static async  listProjects(req, res){
