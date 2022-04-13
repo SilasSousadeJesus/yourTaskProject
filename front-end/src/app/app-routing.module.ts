@@ -5,7 +5,7 @@ import { SignupComponent } from './components/auth/signup/signup.component';
 import { AuthGuardGuard } from './components/guards/auth-guard.guard';
 import { HomeComponent } from './components/home/home.component';
 import { InfoUserComponent } from './components/info-user/info-user.component';
-import { ProjectsComponent } from './components/projects/projects.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 const routes: Routes = [
 
@@ -25,8 +25,12 @@ const routes: Routes = [
       {
         path:'infoUser', component: InfoUserComponent, canActivate: [AuthGuardGuard]
       },
-
-      { path: 'projeto', canActivate: [AuthGuardGuard], loadChildren: () => import('./components/projects/modules/project-module.module').then(m => m.ProjectModuleModule) }
+      { 
+        path: 'projeto', canActivate: [AuthGuardGuard], loadChildren: () => import('./components/projects/modules/project-module.module').then(m => m.ProjectModuleModule) 
+      },
+      {
+        path:'**', component: PageNotFoundComponent
+      }
 
 
 
