@@ -51,7 +51,7 @@
   <h3>Para usar este projeto siga os seguintes passos: </h3>
   <ul >
     <li>Faça um git clone ou baixe manualmente o projeto.</li>
-    <p>git clone https://github.com/SilasSousadeJesus/yourTaskProject.git</p>
+    <p>copie e colo no seu terminal: git clone https://github.com/SilasSousadeJesus/yourTaskProject.git</p>
     <li>No seu VSCODE abra um terminal para pasta back-end e instala os modulos com o comando npm install</li>
     <li>No seu VSCODE abra um terminal para pasta front-end e instala os modulos com o comando npm install</li>
     <li>Dentro da pasta BackEnd renomeio o arquivo .env_exemplo para .env</li>
