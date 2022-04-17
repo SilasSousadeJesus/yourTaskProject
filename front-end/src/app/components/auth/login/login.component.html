@@ -5,12 +5,32 @@
         <form style="width: 400px;" (submit)="login()">
           <div class="mb-3">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" [(ngModel)]="user.email">
-            <div id="emailHelp" class="form-text">Nunca compartilharemos seu email com mais ninguém.</div>
+            <input  #email="ngModel" type="email" class="form-control" id="email"  name="email" [(ngModel)]="user.email" [email]="true" required>
+            <div *ngIf="!email.valid && email.touched" class="validationError">
+              <i class="bi bi-exclamation-triangle"></i> Preencha com um email
+              valido!
+            </div>
+            <div *ngIf="formValidation == 'empty password field' " class="validationError">
+              <i class="bi bi-exclamation-triangle"></i> Campo de senha vazio.
+            </div>
+
+            <div *ngIf="formValidation == 'invalid password' || formValidation == 'User not found' "  class="validationError" required>
+              <i class="bi bi-exclamation-triangle"></i> Senha ou email invalido.
+            </div>
+
           </div>
           <div class="mb-3">
             <label for="password" class="form-label">Senha</label>
             <input type="password" class="form-control" id="password" name="password" [(ngModel)]="user.password">
+
+            <div *ngIf="formValidation == 'invalid password' || formValidation == 'User not found' " class="validationError">
+              <i class="bi bi-exclamation-triangle"></i> Senha ou email invalido.
+            </div>
+
+            <div *ngIf="formValidation == 'empty email field' " class="validationError">
+              <i class="bi bi-exclamation-triangle"></i> Campo de Email vazio.
+            </div>
+
           </div>
           <button type="submit" class="btn btn-primary">Entrar</button>
         </form>

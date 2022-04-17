@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./signup.component.scss']
 })
 export class SignupComponent implements OnInit {
+  formValidation:any = '';
 
   user:User = {
     id:'',
@@ -32,7 +33,7 @@ export class SignupComponent implements OnInit {
     this.authservice.signUp(this.user).subscribe(res=>{
       this.router.navigate(['/login'])
     }, err=>{
-      console.log(err)
+     this.formValidation = err.error.message;
     })
   }
 

@@ -11,6 +11,7 @@ import { Task } from './taskModel/task';
 })
 export class TasksComponent implements OnInit {
 
+  formValidation:any = "";
 
    tasks:any = [{
     name: '',
@@ -54,7 +55,7 @@ export class TasksComponent implements OnInit {
   createTask(){
     this.taskService.create(this.projectIdent(), this.task).subscribe(res=>{
        this.listTask();
-    }, err=>console.log(err))
+    }, err=>  this.formValidation = err.error.message)
   }
 
   listTask(){

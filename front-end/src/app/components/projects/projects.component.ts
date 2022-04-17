@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 })
 export class ProjectsComponent implements OnInit {
 
+formValidation:any="";
   projects:any = [{
     name: '',
     description: '',
@@ -42,7 +43,7 @@ export class ProjectsComponent implements OnInit {
     this.projectService.createProject(this.project).subscribe(res=>{
       this.listprojects();
     }, err=>{
-      console.log(err)
+      this.formValidation = err.error.message;
     })
   }
 
