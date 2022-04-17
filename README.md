@@ -1,5 +1,5 @@
 <div align="center">
-  <img align="center"  src="./front-end/src/assets/img/yourTaskBannerlight.png" alt="YourTask">
+  <img align="center"  src="./front-end/src/assets/img/giffullscreen.gif" height="400">
   <h2>Organize e Realize suas tarefas.</h2>
 </div>
 <br>
