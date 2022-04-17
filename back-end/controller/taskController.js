@@ -78,7 +78,7 @@ module.exports = class taskController {
         try {
             const task =  await Task.findByIdAndUpdate(req.params.taskId, {name}, {new: true})
 
-            task.save();
+            await task.save();
 
             return res.status(200).json({message: 'updated Task'})
 
@@ -89,6 +89,30 @@ module.exports = class taskController {
         }
     }
 
+     static async  updateStatus(req, res){
+
+        const projectcurrent = await Project.findById(req.params.projectId)
+        if(!projectcurrent || projectcurrent == null || projectcurrent == ''){
+            return res.status(404).json({message: 'project not found'})
+        }
+
+        const { completed } = req.body;
+
+        try {
+            const task =  await Task.findByIdAndUpdate(req.params.taskId, { completed }, {new: true})
+
+            await task.save();
+
+            return res.status(200).json({message: 'updated Task'})
+
+        } catch (error) {
+
+            return res.status(400).json(error)
+
+        }
+
+
+    }
     static async deleteTask(req, res){
 
         const project = await Project.findById(req.params.projectId)

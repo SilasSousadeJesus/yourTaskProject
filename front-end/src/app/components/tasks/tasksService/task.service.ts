@@ -27,6 +27,10 @@ export class TaskService {
     return this.http.post(`${this.url}/${idProject}/task/update/${idTask}`, task)
   }
 
+  editTaskStatus(idProject:any, idTask:string, task:Task):Observable<any>{
+    return this.http.post(`${this.url}/${idProject}/task/updateStatus/${idTask}`, task)
+  }
+
   delete(idProject:any, idTask:string ):Observable<any>{
     return this.http.delete(`${this.url}/${idProject}/task/delete/${idTask}`)
   }

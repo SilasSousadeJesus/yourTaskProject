@@ -12,8 +12,9 @@ import { Task } from './taskModel/task';
 export class TasksComponent implements OnInit {
 
   formValidation:any = "";
+  ischecked!:boolean
 
-   tasks:any = [{
+  tasks:any = [{
     name: '',
     completed: '',
     project:  '',
@@ -38,6 +39,19 @@ export class TasksComponent implements OnInit {
 
     this.projectIdent();
     this.listTask();
+
+  }
+
+
+  onchangestate($event:any, id:any){
+   const projectId = this.projectIdent()
+   const taskId = id
+   const isCheck:boolean = $event.target.checked;
+   this.task.completed = isCheck
+
+    this.taskService.editTaskStatus(projectId, taskId, this.task).subscribe(res => {
+     this.listTask();
+    }, err => console.log(err))
 
   }
 
