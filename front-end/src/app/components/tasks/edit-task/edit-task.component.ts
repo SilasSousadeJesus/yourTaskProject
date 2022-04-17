@@ -48,7 +48,7 @@ export class EditTaskComponent implements OnInit {
   editTask(){
     const projectId = this.projectIdent()
     const taskId = this.taskIdent()
-  
+
      this.taskService.edit(projectId, taskId, this.task).subscribe(res => {
       this.router.navigate([`/projeto/task/${projectId}`]);
      }, err => console.log(err))

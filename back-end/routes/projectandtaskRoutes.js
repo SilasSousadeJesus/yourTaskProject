@@ -18,6 +18,7 @@ router.delete('/deleteProject/:projectId', projectController.deleteProject);
 router.post('/:projectId/task/create', taskController.createTask);
 router.get('/:projectId/task/', taskController.listTask);
 router.post('/:projectId/task/update/:taskId', taskController.updateTask);
+router.post('/:projectId/task/updateStatus/:taskId', taskController.updateStatus);
 router.delete('/:projectId/task/delete/:taskId', taskController.deleteTask);
 
 
