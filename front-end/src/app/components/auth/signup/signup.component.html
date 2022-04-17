@@ -11,16 +11,27 @@
     <form style="margin-left: 75px; width: 400px;" (submit)="register()">
       <div class="mb-3">
         <label for="name" class="form-label">Nome</label>
-        <input type="name" class="form-control" id="name"  name="name" [(ngModel)]="user.name">
+        <input type="name" class="form-control" id="name"  name="name" [(ngModel)]="user.name" required>
+        <div *ngIf="formValidation == 'empty nome field' " class="validationError">
+          <i class="bi bi-exclamation-triangle"></i> Campo de Nome não foi preenchido vazio.
+        </div>
       </div>
       <div class="mb-3">
         <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" [(ngModel)]="user.email">
-        <div id="emailHelp" class="form-text">Nunca compartilharemos seu email com mais ninguém.</div>
+        <input #email="ngModel" type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" [(ngModel)]="user.email" required [email]="true">
+        <div *ngIf="!email.valid && email.touched"  class="validationError">
+          <i class="bi bi-exclamation-triangle"></i> preencha com um email valido.
+        </div>
+        <div  *ngIf="formValidation == 'empty email field'  " class="validationError">
+          <i class="bi bi-exclamation-triangle"></i> Campo de Email não foi preenchido vazio.
+        </div>
       </div>
       <div class="mb-3">
         <label for="password" class="form-label">Senha</label>
-        <input type="password" class="form-control" id="password" name="password" [(ngModel)]="user.password">
+        <input type="password" class="form-control" id="password" name="password" [(ngModel)]="user.password" required>
+        <div *ngIf="formValidation == 'empty password field' " class="validationError">
+          <i class="bi bi-exclamation-triangle"></i> Campo de Senha não foi preenchido vazio.
+        </div>
       </div>
       <button type="submit" class="btn btn-primary">Cadastrar</button>
     </form>

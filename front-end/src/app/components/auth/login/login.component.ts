@@ -10,6 +10,8 @@ import { User } from './../models/user';
 })
 export class LoginComponent implements OnInit {
 
+  formValidation: any = "";
+
   user:User =  {
     id:'',
     name: '',
@@ -28,6 +30,8 @@ export class LoginComponent implements OnInit {
     return this.authService.sigIni(this.user).subscribe(res=>{
       sessionStorage.setItem('token', res.token)
       this.router.navigate(['/projeto'])
+    }, err =>{
+      this.formValidation = err.error.message;
     })
   }
 
