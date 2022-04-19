@@ -31,7 +31,7 @@ module.exports = class projectController {
             const projects =  await Project.find({user : userId}).populate(['user', 'tasks']);
 
             if(!projects || projects == null || projects == ''){
-                return res.status(404).json({message: 'there are no projects'})
+                return res.status(200).json(projects)
             }
 
             return res.status(200).json(projects);
