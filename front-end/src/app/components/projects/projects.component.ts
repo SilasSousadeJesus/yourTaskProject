@@ -50,7 +50,7 @@ formValidation:any="";
   listprojects(){
 
     this.projectService.listProject(this.userIdent()).subscribe(res=>{
-      return this.projects = res;
+       this.projects = res;
     }, err=> console.log(err))
   }
 
@@ -58,6 +58,7 @@ formValidation:any="";
       this.projectService.deleteProject(id).subscribe(res=>{
         this.listprojects();
       }, err=>console.log(err))
+
   }
 
   routerEdit(id:string){
