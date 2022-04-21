@@ -5,7 +5,7 @@
 <br>
 <div>
   <h2 align="center"> Clique no link para acessar a aplicação:  </h2>
-  <h3 align="center" >  https://frontyourtaskproject.herokuapp.com/home  </h3>
+  <h3 align="center" >  https://frontyourtaskproject.herokuapp.com/  </h3>
 </div>
 <br>
 
