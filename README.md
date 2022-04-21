@@ -4,7 +4,8 @@
 </div>
 <br>
 <div>
-  <h2 align="center" >&rArr; PROJETO AINDA EM CONSTRUÇÃO &lArr;</h2>
+  <h2 align="center"> &rArr; PROJETO AINDA EM CONSTRUÇÃO &lArr; </h2>
+  <p>  https://frontyourtaskproject.herokuapp.com/home  </p>
 </div>
 <br>
 
