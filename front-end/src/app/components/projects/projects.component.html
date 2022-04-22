@@ -25,7 +25,7 @@
         <form style="width: 400px;" (submit)="createProject()">
           <div class="mb-3">
             <label for="name" class="form-label">Nome do projeto</label>
-            <input style="width: 80%;" [(ngModel)]="project.name" type="text" class="form-control" id="name"  name="name" required>
+            <input style="width: 80%;" [(ngModel)]="project.name" type="text" class="form-control" id="name"  name="name" required >
             <div *ngIf="formValidation == 'empty name fields' " class="validationError">
               <i class="bi bi-exclamation-triangle"></i> Campo de nome vazio.
             </div>
