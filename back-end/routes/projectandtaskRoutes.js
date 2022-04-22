@@ -23,9 +23,4 @@ router.delete('/:projectId/task/delete/:taskId', taskController.deleteTask);
 
 
 
-
-// https://www.youtube.com/watch?v=GAZdUyIV3ms&t=522s
-
-
-
 module.exports = router;

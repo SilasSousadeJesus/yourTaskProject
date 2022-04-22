@@ -7,7 +7,7 @@ import { ProjectModel } from "../model/project-model";
 })
 export class ProjectService {
 
-  url = 'http://localhost:3000/project';
+  url = 'https://yourtaskproject.herokuapp.com/project';
 
   constructor(private http: HttpClient) { }
 

@@ -8,7 +8,7 @@ import { User } from "../../auth/models/user";
 })
 export class UserServiceService {
 
-  url ='http://localhost:3000'
+  url ='https://yourtaskproject.herokuapp.com'
   helper = new JwtHelperService();
 
   currentUser: User = {
