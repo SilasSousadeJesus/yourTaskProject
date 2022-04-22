@@ -1,8 +1,7 @@
 <div>
+  <h2 align="center">Organize e Realize suas tarefas.</h2>
   <h2 align="center"> Clique no link para acessar a aplicação:  </h2>
   <h3 align="center" >  https://frontyourtaskproject.herokuapp.com/  </h3>
-</div>
-<div>
   <h2 align="center"> Clique no link para assistir o video da aplicação:  </h2>
   <h3 align="center" >  https://www.youtube.com/watch?v=YNcOXK-xa5o&list=PLt35KvNPPYNA_YfJbu4Er3D8NCyko84aX&index=1  </h3>
 </div>
@@ -62,8 +61,9 @@
      <li>Tudo pronto!!</li>
   </ul>
   
+    
  <div align="center">
   <img align="center"  src="./front-end/src/assets/img/giffullscreen.gif" height="400">
-  <h2>Organize e Realize suas tarefas.</h2>
 </div>
+
 
