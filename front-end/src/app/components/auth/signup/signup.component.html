@@ -29,6 +29,9 @@
         <div  *ngIf="formValidation == 'empty email field'  " class="validationError">
           <i class="bi bi-exclamation-triangle"></i> Campo de Email não foi preenchido vazio.
         </div>
+        <div  *ngIf="formValidation == 'existing email'  " class="validationError">
+          <i class="bi bi-exclamation-triangle"></i> Email já cadastrado.
+        </div>
       </div>
       <div class="mb-3">
         <label for="password" class="form-label">Senha</label>
