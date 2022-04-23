@@ -1,5 +1,7 @@
 <div>
-  <h2 align="center">Organize e Realize suas tarefas.</h2>
+ <div align="center">
+  <img align="center"  src="./front-end/src/assets/img/giffullscreen.gif" height="400">
+</div>
   <h2 align="center"> Clique no link para acessar a aplicação:  </h2>
   <h3 align="center" >  https://frontyourtaskproject.herokuapp.com/  </h3>
   <h2 align="center"> Clique no link para assistir o video da aplicação:  </h2>
@@ -62,8 +64,5 @@
   </ul>
   
     
- <div align="center">
-  <img align="center"  src="./front-end/src/assets/img/giffullscreen.gif" height="400">
-</div>
 
 
