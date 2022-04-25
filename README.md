@@ -5,20 +5,29 @@
   <h2 align="center"> Clique no link para acessar a aplicação:  </h2>
   <h3 align="center" >  https://frontyourtaskproject.herokuapp.com/  </h3>
   <h2 align="center"> Clique no link para assistir o video da aplicação:  </h2>
-    [![YourTask](https://res.cloudinary.com/marcomontalbano/image/upload/v1650917812/video_to_markdown/images/youtube--YNcOXK-xa5o-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=YNcOXK-xa5o&list=PLt35KvNPPYNA_YfJbu4Er3D8NCyko84aX&index=2 "YourTask")
+  <h3 align="center" >  https://www.youtube.com/watch?v=YNcOXK-xa5o&list=PLt35KvNPPYNA_YfJbu4Er3D8NCyko84aX&index=2 </h3>
+
 </div>
-<br>
 
 <div>
-  <h2 > Overview da Aplicação</h2>
+  <h2 align="center"> Overview da Aplicação</h2>
   <br>
   <h3 >YourTask é Aplicação web que consiste em um To do List, onde o Usuario pode criar projetos e dentro destes projetos uma lista de tarefas a fazer.</h3>
   <br>
 
     
   <h3> Requisitos do Negócio</h3>
-  <ul >
-    <li >Cadastro, listagem, atualização e remoção de Usuarios, projetos e tarefas</li>
+ 
+   <ul>
+    <li>Plataforma com design minimalista</li>
+    <li>Login e Autenticação de Usuarios</li>
+    <li>Funcionalidades de criação, edição e remoção de projetos e tarefas</li>
+    <li>possbilidade do usuario editar as suas proprias informações.</li>
+  </ul>
+   <br>
+  <h3>Recursos Utilziados</h3>
+  <ul>
+    <li>Cadastro, listagem, atualização e remoção de Usuarios, projetos e tarefas(CRUDs)</li>
     <li>Login e Autenticação de Usuarios</li>
     <li>Criptografia de Senha de Usuario</li>
      <li>Guarda de Rotas</li>
