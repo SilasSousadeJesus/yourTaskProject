@@ -25,7 +25,7 @@
     <li>possbilidade do usuario editar as suas proprias informações.</li>
   </ul>
    <br>
-  <h3>Recursos Utilziados</h3>
+  <h3>Recursos Utilizados</h3>
   <ul>
     <li>Cadastro, listagem, atualização e remoção de Usuarios, projetos e tarefas(CRUDs)</li>
     <li>Login e Autenticação de Usuarios</li>
