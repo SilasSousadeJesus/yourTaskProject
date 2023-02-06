@@ -1,0 +1,89 @@
+
+ <div  style="margin-top: 70px;">
+  <h3 class="text-center mb-3 ">Seja bem vindo, {{user.name}}!</h3>
+ </div>
+<div class="d-flex  justify-content-center " style="height: 600px;">
+  <div class="card" style="width: 20rem; height: 250px;" >
+    <div class="card-header text-center">
+      <h3>Meus Dados</h3>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item text-muted"><h3>Nome: {{user.name}}</h3></li>
+      <li class="list-group-item text-muted"><h3>Email: {{user.email}}</h3></li>
+    </ul>
+    <div class="d-flex justify-content-center" style="">
+
+    <!-- botão de editar conta -->
+    <button
+    type="button"
+    class="btn btn-light"
+    data-bs-toggle="modal"
+    data-bs-target="#editarConta"
+      >Editar
+    </button>
+      <!-- modal para editar conta -->
+      <div class="modal" tabindex="-1" id="editarConta">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Editar Informações</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form (submit)="updateUser()">
+                <div class="mb-3">
+                  <label for="exampleInputname" class="form-label">Nome</label>
+                  <input name="name" type="text" class="form-control" id="exampleInputname" value="{{ user.name }}"
+                  [(ngModel)]="user.name">
+                </div>
+                <div class="mb-3 ">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <input  name="email"type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ user.email }}"
+                  [(ngModel)]="user.email">
+                </div>
+                    <div class="d-flex justify-content-end">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                      <button type="submit" class="btn btn-primary ms-3"  data-bs-dismiss="modal">Salvar Alterações</button>
+                    </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- botão de deletar-->
+      <button
+      type="button"
+      class="btn btn-light ms-2 text-muted"
+      data-bs-toggle="modal"
+      data-bs-target="#deletarConta"
+      >Deletar conta
+    </button>
+
+
+
+      <!-- modal para deletar conta -->
+      <div class="modal"  id="deletarConta" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Deletar Conta</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Tem certeza que deseja deletar sua conta? os dados não poderam ser recuperados!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="deleteUser()">Deletar conta</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
