@@ -1,20 +1,18 @@
-<div>
- <div align="center">
-  <img align="center"  src="./front-end/src/assets/img/giffullscreen.gif" height="400">
-</div>
+
+<h2 align="center"> Overview da Aplicação</h2>
+
+| | | |
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="1604"  src="./front-end/src/assets/img/teladelogin.jpg"> |  <img width="1604" src="./front-end/src/assets/img/teladeprojetos.jpg"> |<img width="1604"  src="./front-end/src/assets/img/teladetasks.jpg">|
 
   <h2 align="center"> Clique no link para assistir o video da aplicação:  </h2>
   <h3 align="center" >  https://www.youtube.com/watch?v=YNcOXK-xa5o&list=PLt35KvNPPYNA_YfJbu4Er3D8NCyko84aX&index=2 </h3>
 
-</div>
-
 <div>
-  <h2 align="center"> Overview da Aplicação</h2>
   <br>
   <h3 >YourTask é Aplicação web que consiste em um To do List, onde o Usuario pode criar projetos e dentro destes projetos uma lista de tarefas a fazer.</h3>
   <br>
 
-    
   <h3> Requisitos do Negócio</h3>
  
    <ul>
@@ -40,7 +38,6 @@
 
 </div>
 
-
 <div>
   <h2 >Tecnologias & Ferramentas utilizadas </h2>
   
@@ -53,7 +50,6 @@
   </div>
 
 </div>
-
 
   <h3>Para usar este projeto siga os seguintes passos: </h3>
   <ul >
@@ -70,7 +66,7 @@
      <li>No seu VSCODE abra a pasta front-end em outro terminal e digite o comando: ng serve -o. e deixe rodando</li>
      <li>Tudo pronto!!</li>
   </ul>
-  
-    
 
-
+<div align="center">
+  <img align="center"  src="./front-end/src/assets/img/giffullscreen.gif" height="400">
+</div>
