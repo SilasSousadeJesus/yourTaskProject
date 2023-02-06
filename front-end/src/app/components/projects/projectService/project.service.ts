@@ -7,7 +7,7 @@ import { ProjectModel } from "../model/project-model";
 })
 export class ProjectService {
 
-  url = "http://localhost:3000";
+  url = "http://localhost:3000/project";
 
   constructor(private http: HttpClient) { }
 
@@ -16,7 +16,7 @@ export class ProjectService {
   }
 
   listProject(userId:string){
-    return this.http.get<ProjectModel>(`${this.url}/project/${userId}`)
+    return this.http.get<ProjectModel>(`${this.url}/${userId}`)
   }
 
   deleteProject(id:string){
